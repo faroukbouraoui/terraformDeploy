@@ -32,4 +32,4 @@ jobs:
         run: terraform init
 
       - name: Run Terraform apply
-        run: terraform apply -var "region=${{ github.event.inputs.region }}" -var "vpc_name= default" -auto-approve
+        run: terraform apply -auto-approve
