@@ -3,7 +3,7 @@ name: Deploy EC2 Instance
 
 on:
   workflow_run:
-    workflows: ["Docker Build & Publish"]
+    workflows: [build]
     types:
       - completed
       
