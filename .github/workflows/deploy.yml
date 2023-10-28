@@ -1,4 +1,4 @@
-name: Deploy EC2 Instance
+name: workflow_02
 
 
 on: [repository_dispatch]
