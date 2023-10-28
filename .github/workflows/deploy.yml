@@ -10,7 +10,7 @@ on:
       vpc:
         description: 'VPC Name'
         required: true
-        default: 'Application-Vpc'
+        default: 'default'
 
 jobs:
   deploy:
