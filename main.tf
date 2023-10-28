@@ -23,10 +23,9 @@ data "aws_ami" "latest_amazon_linux" {
 }
 
 data "aws_vpc" "selected_vpc"{
-	filter {
-	  name = "tag:Name"
-	  values = "default"
-	}
+  tags = {
+    "Name" = "default"
+  }
 }
 data "aws_subnets" "private" {
 	filter {
