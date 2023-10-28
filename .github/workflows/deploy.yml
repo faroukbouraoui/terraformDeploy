@@ -1,7 +1,9 @@
 name: Deploy EC2 Instance
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
     inputs:
       region:
         description: 'Region'
