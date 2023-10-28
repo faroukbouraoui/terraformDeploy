@@ -1,5 +1,5 @@
 variable "region" {}
-variable "vpc_name" {}
+
 
 provider "aws" {
 	region = var.region
@@ -25,7 +25,7 @@ data "aws_ami" "latest_amazon_linux" {
 data "aws_vpc" "selected_vpc"{
 	filter {
 	  name = "tag:Name"
-	  values = [ var.vpc_name ]
+	  values = "default"
 	}
 }
 data "aws_subnets" "private" {
